@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --nav-font-color: #333;
+    --nav-bg-color: #eee;
+    --container-font-color: plum;
+    --container-bg-color: aliceblue;
+}
+
+.dark-theme{
+    --nav-font-color: #eee;
+    --nav-bg-color: #333;
+    --container-font-color: aliceblue;
+    --container-bg-color: plum;
+}
+
+body{
+    font-family: 'Space Grotesk', sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--nav-font-color);
+    background-color: var(--nav-bg-color);
+    padding: 1rem; /*1rem ile gri nav barımızı biraz genişletiyopruz  boydan */
+    transition: 0.5s ease all;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: var(--container-font-color);
+    background-color: var(--container-bg-color);
+    transition: 0.5s ease all;
+}
